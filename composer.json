@@ -1,0 +1,16 @@
+{
+    "name": "solobea/command-helper",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Solobea\\CommandHelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mabula",
+            "email": "'daudmabula8@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,29 @@
+# ------------------------------------------------
+# Enable URL Rewriting (for clean URLs, routing)
+# ------------------------------------------------
+RewriteEngine On
+
+# Example: Redirect all requests to index.php
+# (Useful for single-page apps or frameworks)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php/$1 [L,QSA]
+
+# ------------------------------------------------
+# Set default index file
+# ------------------------------------------------
+DirectoryIndex index.html index.php
+
+# ------------------------------------------------
+# Redirect from HTTP to HTTPS
+# ------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ------------------------------------------------
+# Deny access to hidden files (.env, .git, etc.)
+# ------------------------------------------------
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
