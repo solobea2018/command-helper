@@ -14,7 +14,7 @@ class Command
         header('Content-Type: application/json; charset=utf-8');
 
         // API access token expected from the request header
-        $accessToken = Config::$APP['access_token'];
+        $accessToken = getenv("COHE_TOKEN");
 
         $headers = function_exists('getallheaders')
             ? getallheaders()
@@ -89,7 +89,7 @@ class Command
 
     private function askAI(string $userMessage): string
     {
-        $apiKey = Config::$APP['api_key'];
+        $apiKey = getenv("AI_KEY");
 
         $url = 'https://api.openai.com/v1/chat/completions';
 

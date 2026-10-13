@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'solobea/command-helper',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'fa830deb8ddeba361c87bbbc58c354e25b2cb525',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'solobea/command-helper' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'fa830deb8ddeba361c87bbbc58c354e25b2cb525',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
